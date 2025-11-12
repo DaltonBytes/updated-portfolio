@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import PageTitle from "../components/PageTitle";
 import PilotEgg from "../assets/pilot_egg.png";
+import CodingEgg from "../assets/coder_egg.png";
+import CyclingEgg from "../assets/cyclist_egg.png";
 
 const aboutSections = [
   {
@@ -16,7 +18,7 @@ const aboutSections = [
     label: "Software Developer",
     description:
       "I enjoy building software solutions, learning new languages and frameworks, and creating applications that solve real-world problems.",
-    image: PilotEgg,
+    image: CodingEgg,
   },
   {
     id: 3,
@@ -37,7 +39,7 @@ const aboutSections = [
     label: "Hobbyist",
     description:
       "From tinkering with electronics to learning new hobbies, I enjoy exploring things outside my professional life.",
-    image: PilotEgg,
+    image: CyclingEgg,
   },
   {
     id: 6,

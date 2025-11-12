@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import PageTitle from "../components/PageTitle";
 import pilotEgg from "../assets/pilot_egg.png";
 import pilotCracked from "../assets/react.svg";
+import cycleEgg from "../assets/cyclist_egg.png";
+import coderEgg from "../assets/coder_egg.png";
 
 const eggs = [
   {
@@ -13,8 +15,8 @@ const eggs = [
   {
     id: 2,
     label: "Software Developer",
-    image: "../assets/pilot_egg.png",
-    crackedImage: "../assets/react.svg",
+    image: coderEgg,
+    crackedImage: pilotCracked,
   },
   {
     id: 3,
@@ -31,8 +33,8 @@ const eggs = [
   {
     id: 5,
     label: "Hobbyist",
-    image: "../assets/pilot_egg.png",
-    crackedImage: "../assets/react.svg",
+    image: cycleEgg,
+    crackedImage: pilotCracked,
   },
   {
     id: 6,
