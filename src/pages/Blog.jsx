@@ -26,19 +26,22 @@ export default function Blog() {
       <h1 className="text-3xl font-bold mb-8 text-center text-[#3B3A30]">
         Blog
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.map((post) => (
-          <Link
-            key={post.id}
-            to={`/blog/${post.id}`}
-            className="block bg-[#F7F1E5] hover:bg-[#F3EAD4] rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6"
-          >
-            <h2 className="text-xl font-bold mb-2 text-[#3B3A30]">
-              {post.title}
-            </h2>
-            <p className="text-[#4A4A3F]">{post.excerpt}</p>
-          </Link>
-        ))}
+      <div className="space-y-8 max-w-4xl mx-auto">
+        {posts
+          .slice()
+          .reverse()
+          .map((post) => (
+            <Link
+              key={post.id}
+              to={`/blog/${post.id}`}
+              className="block bg-[#4A4A3F] hover:bg-[#5A5A4F] rounded-2xl shadow-lg hover:shadow-xl transition-all p-6 border-4 border-[#C2B69C]"
+            >
+              <h2 className="text-2xl font-bold mb-3 text-[#EEE6D8]">
+                {post.title}
+              </h2>
+              <p className="text-[#D4C9B3] leading-relaxed">{post.excerpt}</p>
+            </Link>
+          ))}
       </div>
     </div>
   );
