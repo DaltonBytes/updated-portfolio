@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import PageTitle from "../components/PageTitle";
+
 import PilotEgg from "../assets/pilot_egg.png";
 import CodingEgg from "../assets/coder_egg.png";
 import CyclingEgg from "../assets/cyclist_egg.png";
@@ -57,52 +57,54 @@ export default function About() {
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace("#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
         setHighlighted(id);
-        const timer = setTimeout(() => setHighlighted(null), 1500); // 1.5s highlight
+
+        const timer = setTimeout(() => setHighlighted(null), 1500);
         return () => clearTimeout(timer);
       }
     }
   }, [location]);
 
   return (
-    <>
-      <PageTitle title="About" />
-      <section className="bg-[#EEE6D8] text-[#3B3A30] p-8">
-        <h1 className="text-3xl font-semibold mb-12 text-center">About Me</h1>
-        <p className="text-1xl font-semibold mb-12 text-center">
-          I've worn many hats in my time. Here are the ones that describe me
-          best!
-        </p>
-
-        <div className="space-y-16">
-          {aboutSections.map((section, index) => (
-            <div
-              key={section.id}
-              id={`egg${section.id}`}
-              className={`flex flex-col md:flex-row items-center transition-all duration-500 ${
-                index % 2 === 0 ? "" : "md:flex-row-reverse"
-              } ${highlighted === `egg${section.id}` ? "bg-[#C2B280] rounded-xl p-4 md:p-6" : ""}`}
-            >
-              <div className="w-32 h-40 shrink-0 mx-auto md:mx-0">
-                <img
-                  src={section.image}
-                  alt={section.label}
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
-                />
-              </div>
-
-              <div className="md:w-1/2 mt-6 md:mt-0 md:px-8">
-                <h2 className="text-2xl font-bold mb-2">{section.label}</h2>
-                <p className="text-gray-700">{section.description}</p>
-              </div>
+    <section className="bg-[#1E2320] text-[#C5C6B3] grow pt-32 pb-24 px-8">
+      <h1 className="text-center text-4xl font-semibold text-[#E8DCC2] mb-16">
+        About Me
+      </h1>
+      <div className="space-y-20 max-w-6xl mx-auto">
+        {aboutSections.map((sec, index) => (
+          <div
+            key={sec.id}
+            id={`egg${sec.id}`}
+            className={`
+            flex flex-col md:flex-row items-center gap-10 rounded-xl border border-[#0F1315]
+            bg-[#34372E] p-8 transition-all duration-500
+            ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}
+            ${
+              highlighted === `egg${sec.id}`
+                ? "bg-[#3F4337] shadow-[0_0_10px_#3F4337,6px_6px_0_#0F1315]"
+                : "shadow-[6px_6px_0_#0F1315]"
+            }
+          `}
+          >
+            <img
+              src={sec.image}
+              alt={sec.label}
+              className="w-40 h-52 object-contain drop-shadow-xl"
+            />
+            <div className="max-w-xl">
+              <h2 className="text-2xl font-semibold text-[#E8DCC2] mb-3">
+                {sec.label}
+              </h2>
+              <p className="leading-relaxed text-[#C5C6B3]">
+                {sec.description}
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
-    </>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

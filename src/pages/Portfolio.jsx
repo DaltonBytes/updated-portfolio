@@ -8,24 +8,36 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="p-8 max-w-6xl mx-auto h-full">
+    <section className="bg-[#1E2320] grow pt-28 pb-24 px-8 max-w-6xl mx-auto">
       <PageTitle title="Portfolio" />
-      <h1 className="text-3xl font-bold mb-8 text-center text-[#3B3A30]">
+
+      <h1 className="text-4xl font-semibold text-center text-[#E8DCC2] mb-16">
         Portfolio
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {/* Project Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-[#F7F1E5] hover:bg-[#F3EAD4] rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6"
+            className="
+              rounded-xl border border-[#0F1315]
+              bg-[#34372E] p-10 shadow-[6px_6px_0_#0F1315]
+              hover:bg-[#3F4337] hover:shadow-[0_0_12px_#3F4337]
+              transition-all
+              min-h-[260px] flex flex-col justify-start
+            "
           >
-            <h2 className="text-xl font-bold mb-2 text-[#3B3A30]">
+            <h2 className="text-2xl font-semibold text-[#E8DCC2] mb-3">
               {project.title}
             </h2>
-            <p className="text-[#4A4A3F]">{project.description}</p>
+
+            <p className="text-[#C5C6B3] leading-relaxed text-lg">
+              {project.description}
+            </p>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

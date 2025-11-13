@@ -1,141 +1,76 @@
 export const earthyTheme = {
-  'code[class*="language-"]': {
-    color: "#2D2C26",
-    background: "none",
-    fontFamily: "'Fira Code', 'Consolas', 'Monaco', monospace",
+  plain: {
+    backgroundColor: "#1E2320",
+    color: "#E8DCC2",
     fontSize: "0.95rem",
-    textAlign: "left",
-    whiteSpace: "pre",
-    wordSpacing: "normal",
-    wordBreak: "normal",
-    wordWrap: "normal",
-    lineHeight: "1.6",
-    tabSize: 4,
-    hyphens: "none",
+    fontFamily: "'Fira Code', Consolas, monospace",
   },
-  'pre[class*="language-"]': {
-    color: "#2D2C26",
-    background: "#E8E0D5",
-    fontFamily: "'Fira Code', 'Consolas', 'Monaco', monospace",
-    fontSize: "0.95rem",
-    textAlign: "left",
-    whiteSpace: "pre",
-    wordSpacing: "normal",
-    wordBreak: "normal",
-    wordWrap: "normal",
-    lineHeight: "1.6",
-    tabSize: 4,
-    hyphens: "none",
-    padding: "1.25rem",
-    margin: "1.5rem 0",
-    overflow: "auto",
-    borderRadius: "0.5rem",
-    border: "2px solid #D4C9B3",
-  },
-  comment: {
-    color: "#8B7E6A",
-    fontStyle: "italic",
-  },
-  prolog: {
-    color: "#8B7E6A",
-  },
-  doctype: {
-    color: "#8B7E6A",
-  },
-  cdata: {
-    color: "#8B7E6A",
-  },
-  punctuation: {
-    color: "#5A5347",
-  },
-  property: {
-    color: "#A0715E",
-  },
-  tag: {
-    color: "#7D6B4F",
-    fontWeight: "600",
-  },
-  boolean: {
-    color: "#B8956A",
-  },
-  number: {
-    color: "#B8956A",
-  },
-  constant: {
-    color: "#B8956A",
-  },
-  symbol: {
-    color: "#B8956A",
-  },
-  deleted: {
-    color: "#C85A54",
-  },
-  selector: {
-    color: "#6B8E5F",
-  },
-  "attr-name": {
-    color: "#A0715E",
-  },
-  string: {
-    color: "#8A7256",
-  },
-  char: {
-    color: "#8A7256",
-  },
-  builtin: {
-    color: "#7D8B6F",
-  },
-  inserted: {
-    color: "#6B8E5F",
-  },
-  operator: {
-    color: "#6B5E4D",
-  },
-  entity: {
-    color: "#A0715E",
-    cursor: "help",
-  },
-  url: {
-    color: "#8A7256",
-  },
-  ".language-css .token.string": {
-    color: "#8A7256",
-  },
-  ".style .token.string": {
-    color: "#8A7256",
-  },
-  variable: {
-    color: "#9B7B5E",
-  },
-  atrule: {
-    color: "#8B7555",
-  },
-  "attr-value": {
-    color: "#8A7256",
-  },
-  function: {
-    color: "#7D6548",
-    fontWeight: "600",
-  },
-  "class-name": {
-    color: "#8B7555",
-    fontWeight: "600",
-  },
-  keyword: {
-    color: "#6B5E4D",
-    fontWeight: "700",
-  },
-  regex: {
-    color: "#A67C52",
-  },
-  important: {
-    color: "#C85A54",
-    fontWeight: "bold",
-  },
-  bold: {
-    fontWeight: "bold",
-  },
-  italic: {
-    fontStyle: "italic",
-  },
+
+  styles: [
+    // Comments
+    {
+      types: ["comment", "prolog", "doctype", "cdata"],
+      style: { color: "#6F7B65", fontStyle: "italic" },
+    },
+
+    // Punctuation / braces
+    {
+      types: ["punctuation"],
+      style: { color: "#C5C6B3" },
+    },
+
+    // Keywords + operators
+    {
+      types: ["keyword", "operator"],
+      style: { color: "#A3B18A", fontWeight: 600 },
+    },
+
+    // Strings
+    {
+      types: ["string", "char", "attr-value"],
+      style: { color: "#E6CFA9" },
+    },
+
+    // Numbers, constants
+    {
+      types: ["number", "boolean", "constant"],
+      style: { color: "#D4A574" },
+    },
+
+    // Functions
+    {
+      types: ["function"],
+      style: { color: "#CBA46A", fontWeight: 600 },
+    },
+
+    // Class names
+    {
+      types: ["class-name"],
+      style: { color: "#E8DCC2", fontWeight: 600 },
+    },
+
+    // Variables
+    {
+      types: ["variable"],
+      style: { color: "#E3D6BB" },
+    },
+
+    // Tags (HTML)
+    {
+      types: ["tag"],
+      style: { color: "#DEC49A" },
+    },
+
+    // Regex
+    {
+      types: ["regex"],
+      style: { color: "#D4A574" },
+    },
+
+    // Important
+    {
+      types: ["important"],
+      style: { color: "#E8DCC2", fontWeight: "bold" },
+    },
+  ],
 };
