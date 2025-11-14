@@ -65,7 +65,6 @@ export default function Post() {
   return (
     <section className="bg-[#1E2320] min-h-screen pt-28 pb-24 px-8">
       <div className="max-w-4xl mx-auto">
-        {/* Back Button */}
         <Link
           to="/blog"
           className="text-[#A3B18A] hover:text-[#E8DCC2] mb-8 inline-block font-medium transition"
@@ -73,7 +72,6 @@ export default function Post() {
           ← Back to Blog
         </Link>
 
-        {/* Blog Content Container */}
         <div
           className="
             rounded-xl border border-[#0F1315]

@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import PageTitle from "../components/PageTitle";
 
 import pilotEgg from "../assets/pilot_egg.png";
 import pilotCracked from "../assets/react.svg";

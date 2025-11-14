@@ -23,7 +23,6 @@ function ScrollToTop() {
   return null;
 }
 
-// Dynamic page titles
 function PageTitle() {
   const { pathname } = useLocation();
   useEffect(() => {
