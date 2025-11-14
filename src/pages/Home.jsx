@@ -35,7 +35,7 @@ export default function Home() {
         <h1 className="text-4xl font-semibold text-[#E8DCC2] mb-4">
           Hi, I'm Dalton — callsign Egg
         </h1>
-        <p className="text-[#C5C6B3]">
+        <p className="text-[#C5C6B3] text-xl font-semibold">
           Crack an egg below to learn more about me.
         </p>
       </div>
