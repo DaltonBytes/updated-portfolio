@@ -1,9 +1,28 @@
 import PageTitle from "../components/PageTitle";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  { id: 1, title: "Project One", description: "A cool project I worked on" },
-  { id: 2, title: "Project Two", description: "Another awesome project" },
-  { id: 3, title: "Project Three", description: "Yet another project" },
+  {
+    id: 1,
+    title: "Flight Logbook",
+    description: "Logbook webapp with weather integrations.",
+    link: "https://github.com/DaltonBytes/logbook",
+  },
+  {
+    id: 2,
+    title: "Calculator",
+    description:
+      "A basic calculator influenced by the final project of The Odin Project Foundations Course.",
+    link: "https://github.com/DaltonBytes/calculator",
+    demo: "https://daltonbytes.github.io/calculator/",
+  },
+  {
+    id: 3,
+    title: "Library",
+    description: "Basic library of books read over my life.",
+    link: "https://github.com/DaltonBytes/library",
+    demo: "https://daltonbytes.github.io/library/",
+  },
 ];
 
 export default function Portfolio() {
@@ -31,9 +50,45 @@ export default function Portfolio() {
               {project.title}
             </h2>
 
-            <p className="text-[#C5C6B3] leading-relaxed text-lg">
+            <p className="text-[#C5C6B3] leading-relaxed text-lg mb-6">
               {project.description}
             </p>
+
+            <div className="mt-auto flex gap-4">
+              {/* GitHub Button */}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  flex items-center gap-2
+                  text-[#E8DCC2] underline underline-offset-2 decoration-[#E8DCC2]
+                  hover:text-[#F4E8CD] hover:decoration-[#F4E8CD]
+                  transition-colors
+                "
+              >
+                <FaGithub size={18} />
+                GitHub
+              </a>
+
+              {/* Live Demo Button (conditional) */}
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    flex items-center gap-2
+                    text-[#E8DCC2] underline underline-offset-2 decoration-[#E8DCC2]
+                    hover:text-[#F4E8CD] hover:decoration-[#F4E8CD]
+                    transition-colors
+                  "
+                >
+                  <FaExternalLinkAlt size={16} />
+                  Live Demo
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

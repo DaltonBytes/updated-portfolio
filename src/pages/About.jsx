@@ -87,7 +87,7 @@ export default function About() {
 
   return (
     <section className="bg-[#1E2320] text-[#C5C6B3] grow pt-32 pb-24 px-8">
-      <h1 className="text-center text-5xl font-semibold text-[#E8DCC2] mb-16">
+      <h1 className="text-center text-4xl font-semibold text-[#E8DCC2] mb-16">
         About Me
       </h1>
       <div className="space-y-20 max-w-6xl mx-auto">

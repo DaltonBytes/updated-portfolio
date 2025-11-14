@@ -4,18 +4,9 @@ import PageTitle from "../components/PageTitle";
 const posts = [
   {
     id: "post1",
-    title: "My First Blog Post",
-    excerpt: "Hello! This is my first blog post about my projects and hobbies.",
-  },
-  {
-    id: "post2",
-    title: "Another Post",
-    excerpt: "Another exciting project I worked on recently...",
-  },
-  {
-    id: "post3",
-    title: "Another First Blog Post",
-    excerpt: "This is me talking about all my coding. Whoo!!",
+    title: "Why I'm Building This Site (and Why My Callsign is Egg)",
+    excerpt:
+      "Hi again! Welcome to my portfolio. I've been wanting to build a site like this for a long time...",
   },
 ];
 
