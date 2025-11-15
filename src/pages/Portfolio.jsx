@@ -46,7 +46,6 @@ export default function Portfolio() {
             </p>
 
             <div className="mt-auto flex gap-4">
-              {/* GitHub Button */}
               <a
                 href={project.link}
                 target="_blank"
@@ -62,7 +61,6 @@ export default function Portfolio() {
                 GitHub
               </a>
 
-              {/* Live Demo Button (conditional) */}
               {project.demo && (
                 <a
                   href={project.demo}
