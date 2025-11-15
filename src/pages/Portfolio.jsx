@@ -16,20 +16,11 @@ const projects = [
     link: "https://github.com/DaltonBytes/calculator",
     demo: "https://daltonbytes.github.io/calculator/",
   },
-  {
-    id: 3,
-    title: "Library",
-    description: "Basic library of books read over my life.",
-    link: "https://github.com/DaltonBytes/library",
-    demo: "https://daltonbytes.github.io/library/",
-  },
 ];
 
 export default function Portfolio() {
   return (
     <section className="bg-[#1E2320] grow pt-28 pb-24 px-8 max-w-6xl mx-auto">
-      <PageTitle title="Portfolio" />
-
       <h1 className="text-4xl font-semibold text-center text-[#E8DCC2] mb-16">
         Portfolio
       </h1>

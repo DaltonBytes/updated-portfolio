@@ -17,7 +17,7 @@ const aboutSections = [
     id: 2,
     label: "Software Developer",
     description:
-      "I rediscovered my passion for building software this past year. I’ve always gravitated toward creating tools that streamline workflows and eliminate tedious tasks. That includes everything from a lightweight CLI utility written in Rust to a full-stack logbook web app with integrated weather data. I love the impact that well-designed software can have. With the addition of modern AI tools, it truly feels like the possibilities are limitless.",
+      "While expanding my technological expertise, I discovered my passion for building software. I’ve always gravitated toward creating tools that streamline workflows and eliminate tedious tasks. That includes everything from a lightweight CLI utility written in Rust to a full-stack logbook web app with integrated weather data. I love the impact that well-designed software can have. With the addition of modern AI tools, it truly feels like the possibilities are limitless.",
     image: CodingEgg,
   },
   {
@@ -86,22 +86,22 @@ export default function About() {
   }, [location]);
 
   return (
-    <section className="bg-[#1E2320] text-[#C5C6B3] grow pt-32 pb-24 px-8">
+    <section className="bg-[#1E2320] text-[#C5C6B3] grow pt-28 pb-24 px-8">
       <h1 className="text-center text-4xl font-semibold text-[#E8DCC2] mb-16">
         About Me
       </h1>
-      <div className="space-y-20 max-w-6xl mx-auto">
+      <div className="space-y-20 max-w-4xl mx-auto">
         {aboutSections.map((sec, index) => (
           <div
             key={sec.id}
             id={`egg${sec.id}`}
             className={`
             flex flex-col md:flex-row items-center gap-10 rounded-xl border border-[#0F1315]
-            bg-[#34372E] p-8 transition-all duration-500
+            bg-[#34372E] p-8 transition-all duration-500 
             ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}
             ${
               highlighted === `egg${sec.id}`
-                ? "bg-[#3F4337] shadow-[0_0_10px_#3F4337,6px_6px_0_#0F1315]"
+                ? "bg-[#3F4337] shadow-[0_0_25px_8px_#3F4337,8px_8px_0_#0F1315]"
                 : "shadow-[6px_6px_0_#0F1315]"
             }
           `}
@@ -109,7 +109,7 @@ export default function About() {
             <img
               src={sec.image}
               alt={sec.label}
-              className="w-40 h-52 object-contain drop-shadow-xl"
+              className="w-40 h-52 object-contain drop-shadow-xl shrink-0"
             />
             <div className="max-w-xl">
               <h2 className="text-2xl font-semibold text-[#E8DCC2] mb-3">

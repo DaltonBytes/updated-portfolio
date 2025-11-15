@@ -33,7 +33,7 @@ function PageTitle() {
       "/portfolio": "Portfolio",
     };
     const current = map[pathname] || "Post";
-    document.title = `${current} | Dalton`;
+    document.title = `${current} | Dalton McMullen`;
   }, [pathname]);
   return null;
 }

@@ -13,7 +13,6 @@ const posts = [
 export default function Blog() {
   return (
     <section className="bg-[#1E2320] grow pt-28 pb-24 px-8 max-w-6xl mx-auto">
-      <PageTitle title="Blog" />
       <h1 className="text-center text-4xl font-semibold text-[#E8DCC2] mb-16">
         {" "}
         Blog{" "}

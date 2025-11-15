@@ -4,4 +4,49 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  scrollbar-gutter: stable;
+}
+
+body {
+  --scrollbar-opacity: 0; /* hidden by default */
+  transition: --scrollbar-opacity 0.3s ease;
+  background: #1e2320; /* your site background */
+  color: #c5c6b3;
+}
+
+/* Body gets .scrolling class added via JS */
+body.scrolling {
+  --scrollbar-opacity: 1; /* becomes visible */
+}
+
+/* ============== */
+/* Scrollbar style */
+/* ============== */
+
+::-webkit-scrollbar {
+  width: 6px; /* thin & minimal */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e2320; /* blends with page */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f4337; /* theme muted green */
+  opacity: var(--scrollbar-opacity); /* fades in/out */
+  border-radius: 9999px; /* pill shape */
+  transition:
+    opacity 0.3s ease,
+    background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e745f; /* slight hover pop */
+  opacity: 1;
+}
+
+/* Firefox fallback */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3f4337 #1e2320;
 }
