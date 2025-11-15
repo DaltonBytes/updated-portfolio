@@ -1,6 +1,6 @@
 # My Official Portfolio
 
-- Check it out at dalton.mcmullen.dev
+- Check it out at daltonmcmullen.dev
 
 ## Technologies Used
 
