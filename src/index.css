@@ -8,40 +8,35 @@ html {
 }
 
 body {
-  --scrollbar-opacity: 0; /* hidden by default */
+  --scrollbar-opacity: 0;
   transition: --scrollbar-opacity 0.3s ease;
-  background: #1e2320; /* your site background */
+  background: #1e2320;
   color: #c5c6b3;
 }
 
-/* Body gets .scrolling class added via JS */
 body.scrolling {
-  --scrollbar-opacity: 1; /* becomes visible */
+  --scrollbar-opacity: 1;
 }
 
-/* ============== */
-/* Scrollbar style */
-/* ============== */
-
 ::-webkit-scrollbar {
-  width: 6px; /* thin & minimal */
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e2320; /* blends with page */
+  background: #1e2320;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3f4337; /* theme muted green */
-  opacity: var(--scrollbar-opacity); /* fades in/out */
-  border-radius: 9999px; /* pill shape */
+  background: #3f4337;
+  opacity: var(--scrollbar-opacity);
+  border-radius: 9999px;
   transition:
     opacity 0.3s ease,
     background 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6e745f; /* slight hover pop */
+  background: #6e745f;
   opacity: 1;
 }
 
