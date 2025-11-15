@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <section className="bg-[#1E2320] flex flex-col items-center pt-28 pb-24 text-center">
       <div className="mb-12 max-w-xl">
-        <h1 className="text-4xl font-semibold text-[#E8DCC2] mb-4">
+        <h1 className="text-4xl font-semibold text-[#E8DCC2] mb-4 mx-8">
           Hi, I'm Dalton — callsign Egg
         </h1>
         <p className="text-[#C5C6B3] text-xl mx-16 font-semibold">
