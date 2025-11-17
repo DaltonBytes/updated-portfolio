@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import coderEgg from "../assets/codingEgg.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Header() {
           to="/"
           className="text-2xl font-semibold text-[#E8DCC2] hover:text-[#F0E7D4] transition-colors"
         >
-          Egg<span className="text-[#A3B18A]"></span>
+          <img src={coderEgg} className="w-12 h-12 object-contain rounded-lg" />
         </Link>
 
         <button

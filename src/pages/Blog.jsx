@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const posts = [
   {
     id: "post1",
-    title: "Why I'm Building This Site (and Why My Callsign is Egg)",
+    title: "Answering the Question I'm Asked Most: Why Egg?",
     excerpt:
       "Hi again! Welcome to my portfolio. I've been wanting to build a site like this for a long time...",
   },

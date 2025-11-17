@@ -1,25 +1,30 @@
 import { useNavigate } from "react-router-dom";
 
-import pilotEgg from "../assets/pilot_egg.png";
-import pilotCracked from "../assets/react.svg";
-import cycleEgg from "../assets/cyclist_egg.png";
-import coderEgg from "../assets/coder_egg.png";
-import pmEgg from "../assets/pilot_egg.png"; // temp placeholder
-import videoEgg from "../assets/pilot_egg.png"; // temp placeholder
-import gradEgg from "../assets/pilot_egg.png"; // temp placeholder
+import pilotEgg from "../assets/flyingEgg.png";
+import codingEgg from "../assets/codingEgg.png";
+import pmEgg from "../assets/pmEgg.png";
+import videoEgg from "../assets/videoEgg.png";
+import cycleEgg from "../assets/cyclingEgg.png";
+import gradEgg from "../assets/gradEgg.png";
+import pilotCracked from "../assets/flyingCracked.png";
+import codingCracked from "../assets/codingCracked.png";
+import pmCracked from "../assets/pmCracked.png";
+import videoCracked from "../assets/videoCracked.png";
+import cycleCracked from "../assets/cyclingCracked.png";
+import gradCracked from "../assets/gradCracked.png";
 
 const eggs = [
   { id: 1, label: "Pilot", image: pilotEgg, crackedImage: pilotCracked },
   {
     id: 2,
     label: "Software Developer",
-    image: coderEgg,
-    crackedImage: pilotCracked,
+    image: codingEgg,
+    crackedImage: codingCracked,
   },
-  { id: 3, label: "Program Manager", image: pmEgg, crackedImage: pilotCracked },
-  { id: 4, label: "Videographer", image: videoEgg, crackedImage: pilotCracked },
-  { id: 5, label: "Hobbyist", image: cycleEgg, crackedImage: pilotCracked },
-  { id: 6, label: "Graduate", image: gradEgg, crackedImage: pilotCracked },
+  { id: 3, label: "Program Manager", image: pmEgg, crackedImage: pmCracked },
+  { id: 4, label: "Videographer", image: videoEgg, crackedImage: videoCracked },
+  { id: 5, label: "Hobbyist", image: cycleEgg, crackedImage: cycleCracked },
+  { id: 6, label: "Graduate", image: gradEgg, crackedImage: gradCracked },
 ];
 
 export default function Home() {

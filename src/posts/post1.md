@@ -1,4 +1,4 @@
-# Why I'm Building This Site (and Why My Callsign is Egg)
+# Answering the Question I'm Asked Most: Why Egg?
 
 Hi again! Welcome to my portfolio. I've been wanting to build a site like this for a long time, and it feels great to finally hit _publish_. I've built this site to be a blend of a portfolio, project log, and whatever else I decide to experiment with along the way.
 
