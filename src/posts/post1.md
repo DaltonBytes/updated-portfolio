@@ -12,7 +12,7 @@ Speaking of stories, here's one I'm sure you had a question about:
 
 In typical Navy callsign fashion, mine came from a mix of timing, personality, and friends who enjoy keeping you humble. When I showed up to my fleet squadron — this is the operational unit you join after finishing flight school, where you fly real missions across the globe — I was confident and excited, otherwise known as too confident for the new guy. The squadron picked up on it immediately and decided that I needed a callsign to ensure I stayed humble throughout my tour.
 
-That's where the landed on "Egg." Simple, silly, and impossible to take too seriously.
+That's where they landed on "Egg." Simple, silly, and impossible to take too seriously.
 
 It became the nickname that kept me grounded and fit perfectly into the squadron's sense of humor. With callsigns, once you're given one, it's permanent. So I chose to lean into it! Now my whole brand is egg — flying egg, coding egg, cycling egg, all the eggs! It is now who I am, and I love it.
 
